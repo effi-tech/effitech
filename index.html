@@ -532,12 +532,8 @@
 price_1IRdxsDD6lRICkhFmlVuEht5
   var checkoutButton = document.getElementById('checkout-button-price_1ICgDsDD6lRICkhFLdVFcKdF');
   checkoutButton.addEventListener('click', function () {
-    /*
-     * When the customer clicks on the button, redirect
-     * them to Checkout.
-     */
     stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1IRdxsDD6lRICkhFmlVuEht5', quantity: 1}],price_1IRdxsDD6lRICkhFmlVuEht5
+      lineItems: [{price: 'price_1IRdxsDD6lRICkhFmlVuEht5', quantity: 1}],
       mode: 'payment',
       /*
        * Do not rely on the redirect to the successUrl for fulfilling
